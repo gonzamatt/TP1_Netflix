@@ -1,2 +1,2 @@
-# TP1_Netflix
-Archivos del TP1 netflix de algoritmos 1. 
+# TP1 Netflix grupo goto
+En esta pagina git va a estar el source code.
