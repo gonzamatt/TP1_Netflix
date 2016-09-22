@@ -21,7 +21,8 @@ Type
     trTemp = record
                 anioDeEmision : string[4];
                 cantEpiDeTemp : byte;
-                vVideos : tvVideos;
+                vVideos : tvVideos
+                end;
                 
     tvTemp = array[1..MAX_TEMPORADAS_POR_SERIE] of trTemp;
     
@@ -29,7 +30,8 @@ Type
                 nombre : string[71];
                 descripcion : string[140];
                 cantTemp : byte;
-                vTemp : tvTemp;
+                vTemp : tvTemp
+                end;
                 
     tvSerie = array[1..MAX_CANTIDAD_SERIES] of trSerie;
     
@@ -39,13 +41,15 @@ Type
                 posicionSerieEnArregloSerie : longint;
                 numTempEnLaSerie : byte;
                 numEpiDeLaTemp : byte;
-                cantVisualizaciones : byte;
+                cantVisualizaciones : byte
+                end;
                 
     tvVisualizacion = array[1..MAX_VISUALIZACIONES_POR_USUARIO] of trVisualizacion;
     
     trUsuario = record 
                 nombreUsuario : string[8];
                 vVisualizacion : tvVisualizacion
+                end;
     
     tvUsuario = array[1..MAX_USUARIOS] of trUsuario;
     
