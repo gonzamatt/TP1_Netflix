@@ -1,0 +1,6 @@
+# Estuve probando el archivo inicializar y me saltaron algunos errores.
+# Los dejo aca escrito para recordar a la tarde.
+
+- anioDeEmision es del tipo string. Solucion: Ponerle '' a la fecha.ej: '1997'
+- Los type de las estructuras de datos van en el unit2 no en el main.
+- Faltan algunos ;
