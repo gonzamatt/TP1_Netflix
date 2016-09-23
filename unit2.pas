@@ -13,15 +13,15 @@ procedure cargarSeries(var vSerie: tvSerie);
     * caso de haberlo tenido}
 begin
     vSerie[1].nombre := 'Friends';
-    vSerie[1].descripcion := 'Friends fue una serie de televisión estadounidense creada y producida por Marta Kauffman y David Crane.'
+    vSerie[1].descripcion := 'Friends fue una serie de television estadounidense creada y producida por Marta Kauffman y David Crane.'
     vSerie[1].cantTemp :=  3;
     vSerie[1].vTemp[1].anioDeEmision := '1994';
     vSerie[1].vTemp[1].cantEpiDeTemp := 5;
-    vSerie[1].vTemp[1].vVideo[1].titulo := 'En el que Monica tiene una nueva compañera';
+    vSerie[1].vTemp[1].vVideo[1].titulo := 'En el que Monica tiene una nueva companiera';
     vSerie[1].vTemp[1].vVideo[1].descripcion := 'S01E01 Friends'
     vSerie[1].vTemp[1].vVideo[1].duracionEnSegundos := 1320;
     vSerie[1].vTemp[1].vVideo[1].visualizaciones := 0;
-    vSerie[1].vTemp[1].vVideo[2].titulo := 'El de la ecografía al final';
+    vSerie[1].vTemp[1].vVideo[2].titulo := 'El de la ecografia al final';
     vSerie[1].vTemp[1].vVideo[2].descripcion := 'S01E02 Friends';
     vSerie[1].vTemp[1].vVideo[2].duracionEnSegundos := 1320;
     vSerie[1].vTemp[1].vVideo[2].visualizaciones := 0;
@@ -61,11 +61,11 @@ begin
     vSerie[1].vTemp[2].vVideo[5].visualizaciones := 0;
     vSerie[1].vTemp[3].anioDeEmision := 1996;
     vSerie[1].vTemp[3].cantEpiDeTemp := 5;
-    vSerie[1].vTemp[3].vVideo[1].titulo := 'El de la fantasía de la princesa Leia' 
+    vSerie[1].vTemp[3].vVideo[1].titulo := 'El de la fantasia de la princesa Leia' 
     vSerie[1].vTemp[3].vVideo[1].descripcion := 'S03E01 Friends'
     vSerie[1].vTemp[3].vVideo[1].duracionEnSegundos := 1320;
     vSerie[1].vTemp[3].vVideo[1].visualizaciones := 0;
-    vSerie[1].vTemp[3].vVideo[2].titulo := 'En el que ninguno está preparado';
+    vSerie[1].vTemp[3].vVideo[2].titulo := 'En el que ninguno esta preparado';
     vSerie[1].vTemp[3].vVideo[2].descripcion := 'S03E02 Friends'
     vSerie[1].vTemp[3].vVideo[2].duracionEnSegundos := 1320;
     vSerie[1].vTemp[3].vVideo[2].visualizaciones := 0;
@@ -73,7 +73,7 @@ begin
     vSerie[1].vTemp[3].vVideo[3].descripcion := 'S03E03 Friends'
     vSerie[1].vTemp[3].vVideo[3].duracionEnSegundos := 1320;
     vSerie[1].vTemp[3].vVideo[3].visualizaciones := 0;
-    vSerie[1].vTemp[3].vVideo[4].titulo := 'El del túnel metafórico'
+    vSerie[1].vTemp[3].vVideo[4].titulo := 'El del tunel metaforico'
     vSerie[1].vTemp[3].vVideo[4].descripcion := 'S03E04 Friends'
     vSerie[1].vTemp[3].vVideo[4].duracionEnSegundos := 1320;
     vSerie[1].vTemp[3].vVideo[4].visualizaciones := 0;
@@ -82,7 +82,7 @@ begin
     vSerie[1].vTemp[3].vVideo[5].duracionEnSegundos := 1320;
     vSerie[1].vTemp[3].vVideo[5].visualizaciones := 0;
     vSerie[2].nombre := 'Futurama' 
-    vSerie[2].descripcion := 'Futurama se desarrolla durante el siglo XXXI, un siglo lleno de maravillas tecnológicas'
+    vSerie[2].descripcion := 'Futurama se desarrolla durante el siglo XXXI, un siglo lleno de maravillas tecnologicas'
     vSerie[2].cantTemp := 3; 
     vSerie[2].vTemp[1].anioDeEmision := 1999;
     vSerie[2].vTemp[1].cantEpiDeTemp := 5
@@ -94,7 +94,7 @@ begin
     vSerie[2].vTemp[1].vVideo[2].descripcion := 'S01E02 Futurama';
     vSerie[2].vTemp[1].vVideo[2].duracionEnSegundos := 1320;
     vSerie[2].vTemp[1].vVideo[2].visualizaciones := 0;
-    vSerie[2].vTemp[1].vVideo[3].titulo := 'Yo, compañero de piso';
+    vSerie[2].vTemp[1].vVideo[3].titulo := 'Yo, companiero de piso';
     vSerie[2].vTemp[1].vVideo[3].descripcion := 'S01E03 Futurama';
     vSerie[2].vTemp[1].vVideo[3].duracionEnSegundos := 1320;
     vSerie[2].vTemp[1].vVideo[3].visualizaciones := 0;
@@ -124,7 +124,7 @@ begin
     vSerie[2].vTemp[2].vVideo[4].descripcion := 'S02E04 Futurama';
     vSerie[2].vTemp[2].vVideo[4].duracionEnSegundos := 1320;
     vSerie[2].vTemp[2].vVideo[4].visualizaciones := 0;
-    vSerie[2].vTemp[2].vVideo[5].titulo := '¿Por qué debo ser un crustáceo enamorado?';
+    vSerie[2].vTemp[2].vVideo[5].titulo := '¿Por que debo ser un crustaceo enamorado?';
     vSerie[2].vTemp[2].vVideo[5].descripcion := 'S02E05 Futurama';
     vSerie[2].vTemp[2].vVideo[5].duracionEnSegundos := 1320;
     vSerie[2].vTemp[2].vVideo[5].visualizaciones := 0;
@@ -134,7 +134,7 @@ begin
     vSerie[2].vTemp[3].vVideo[1].descripcion := 'S03E01 Futurama';
     vSerie[2].vTemp[3].vVideo[1].duracionEnSegundos := 1320;
     vSerie[2].vTemp[3].vVideo[1].visualizaciones := 0;
-    vSerie[2].vTemp[3].vVideo[2].titulo := 'Parásitos perdidos';
+    vSerie[2].vTemp[3].vVideo[2].titulo := 'Parasitos perdidos';
     vSerie[2].vTemp[3].vVideo[2].descripcion := 'S03E02 Futurama';
     vSerie[2].vTemp[3].vVideo[2].duracionEnSegundos := 1320;
     vSerie[2].vTemp[3].vVideo[2].visualizaciones := 0;
@@ -151,8 +151,8 @@ begin
     vSerie[2].vTemp[3].vVideo[5].duracionEnSegundos := 1320;
     vSerie[2].vTemp[3].vVideo[5].visualizaciones := 0;
     vSerie[3].nombre :=  'Game of Thrones';
-    vSerie[3].descripcion := 'Está basada en la serie de novelas Canción de Hielo y Fuego del escritor George R. R. Martin.';
-    vSerie[3].cantTemp := 3;
+    vSerie[3].descripcion := 'Esta basada en la serie de novelas Cancion de Hielo y Fuego del escritor George R. R. Martin.';
+    vSerie[3].cantTemp := 2;
     vSerie[3].vTemp[1].anioDeEmision := 2011 
     vSerie[3].vTemp[1].cantEpiDeTemp := 5; 
     vSerie[3].vTemp[1].vVideo[1].titulo := 'Se acerca el invierno';
@@ -171,7 +171,7 @@ begin
     vSerie[3].vTemp[1].vVideo[4].descripcion := 'S01E04 Game of Thrones';
     vSerie[3].vTemp[1].vVideo[4].duracionEnSegundos := 1320;
     vSerie[3].vTemp[1].vVideo[4].visualizaciones := 0;
-    vSerie[3].vTemp[1].vVideo[5].titulo := 'El lobo y el león';
+    vSerie[3].vTemp[1].vVideo[5].titulo := 'El lobo y el leon';
     vSerie[3].vTemp[1].vVideo[5].descripcion := 'S01E05 Game of Thrones';
     vSerie[3].vTemp[1].vVideo[5].duracionEnSegundos := 1320;
     vSerie[3].vTemp[1].vVideo[5].visualizaciones := 0;
@@ -185,11 +185,11 @@ begin
     vSerie[3].vTemp[2].vVideo[2].descripcion := 'S02E02 Game of Thrones';
     vSerie[3].vTemp[2].vVideo[2].duracionEnSegundos := 1320;
     vSerie[3].vTemp[2].vVideo[2].visualizaciones := 0;
-    vSerie[3].vTemp[2].vVideo[3].titulo := 'Lo que está muerto no puede morir';
+    vSerie[3].vTemp[2].vVideo[3].titulo := 'Lo que esta muerto no puede morir';
     vSerie[3].vTemp[2].vVideo[3].descripcion := 'S02E03 Game of Thrones';
     vSerie[3].vTemp[2].vVideo[3].duracionEnSegundos := 1320;
     vSerie[3].vTemp[2].vVideo[3].visualizaciones := 0;
-    vSerie[3].vTemp[2].vVideo[4].titulo := 'Jardín de Huesos';
+    vSerie[3].vTemp[2].vVideo[4].titulo := 'Jardin de Huesos';
     vSerie[3].vTemp[2].vVideo[4].descripcion := 'S02E04 Game of Thrones';
     vSerie[3].vTemp[2].vVideo[4].duracionEnSegundos := 1320;
     vSerie[3].vTemp[2].vVideo[4].visualizaciones := 0;
@@ -220,7 +220,7 @@ begin
     vSerie[3].vTemp[3].vVideo[5].duracionEnSegundos := 1320;
     vSerie[3].vTemp[3].vVideo[5].visualizaciones := 0;
     vSerie[4].nombre :=  'Los Simuladores';
-    vSerie[4].descripcion := 'Serie argentina acerca de un grupo de cuatro socios que mediante operativos de simulacro sofisticados resuelven los problemas de gente común.'
+    vSerie[4].descripcion := 'Serie argentina acerca de un grupo de cuatro socios que mediante operativos de simulacro sofisticados resuelven los problemas de gente comun.'
     vSerie[4].cantTemp := 3;
     vSerie[4].vTemp[1].anioDeEmision := 2002; 
     vSerie[4].vTemp[1].cantEpiDeTemp := 5;
@@ -228,7 +228,7 @@ begin
     vSerie[4].vTemp[1].vVideo[1].descripcion := 'S01E01 Los Simuladores';
     vSerie[4].vTemp[1].vVideo[1].duracionEnSegundos := 1320;
     vSerie[4].vTemp[1].vVideo[1].visualizaciones := 0;
-    vSerie[4].vTemp[1].vVideo[2].titulo := 'Diagnóstico rectoscópico';
+    vSerie[4].vTemp[1].vVideo[2].titulo := 'Diagnostico rectoscopico';
     vSerie[4].vTemp[1].vVideo[2].descripcion := 'S01E02 Los Simuladores';
     vSerie[4].vTemp[1].vVideo[2].duracionEnSegundos := 1320;
     vSerie[4].vTemp[1].vVideo[2].visualizaciones := 0;
@@ -236,7 +236,7 @@ begin
     vSerie[4].vTemp[1].vVideo[3].descripcion := 'S01E03 Los Simuladores';
     vSerie[4].vTemp[1].vVideo[3].duracionEnSegundos := 1320;
     vSerie[4].vTemp[1].vVideo[3].visualizaciones := 0;
-    vSerie[4].vTemp[1].vVideo[4].titulo := 'El testigo español';
+    vSerie[4].vTemp[1].vVideo[4].titulo := 'El testigo espaniol';
     vSerie[4].vTemp[1].vVideo[4].descripcion := 'S01E04 Los Simuladores';
     vSerie[4].vTemp[1].vVideo[4].duracionEnSegundos := 1320;
     vSerie[4].vTemp[1].vVideo[4].visualizaciones := 0;
