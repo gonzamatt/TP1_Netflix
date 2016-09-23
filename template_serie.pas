@@ -1,0 +1,9 @@
+    vSerie[1].nombre := ;
+    vSerie[1].descripcion := 
+    vSerie[1].cantTemp :=  
+    vSerie[1].vTemp[1].anioDeEmision := 
+    vSerie[1].vTemp[1].cantEpiDeTemp := 
+    vSerie[1].vTemp[1].vVideo[1].titulo := 
+    vSerie[1].vTemp[1].vVideo[1].descripcion := 
+    vSerie[1].vTemp[1].vVideo[1].duracionEnSegundos := 1320;
+    vSerie[1].vTemp[1].vVideo[1].visualizaciones := 0;
