@@ -9,8 +9,7 @@ implementation
 
 procedure cargarSeries(var vSerie: tvSerie);
     {Pre: Se recibe el vector Series vacio o con datos
-    * Post: Se devuelve el vector con las series cargadas y eliminando los datos anteriores en
-    * caso de haberlo tenido}
+    * Post: Se cargan las series al vector Series. En caso de haber tenido datos estos se eliminan}
 begin
     vSerie[1].nombre := 'Friends';
     vSerie[1].descripcion := 'Friends fue una serie de television estadounidense creada y producida por Marta Kauffman y David Crane.'
