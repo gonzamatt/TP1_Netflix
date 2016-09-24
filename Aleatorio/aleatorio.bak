@@ -1,0 +1,49 @@
+program Aleatorio;
+uses crt;
+
+const
+	MAX=20;
+	MIN=1;
+
+type
+	tDatos=byte;
+	tRango=MIN..MAX;
+	tVector=array[tRango] of tDatos;
+
+procedure GenerarVisualizaciones (var vector:tVector);
+Var
+	vis,cont:byte;
+
+begin
+	vis:=0;
+	cont:=0;
+	randomize;
+	cont:=random(101);
+	if (cont<61) then
+		vis:=0;
+	if (cont>61)and(cont<81) then
+		vis:=1;
+	if (cont>81)and(cont<91) then
+		vis:=2;
+	if (cont>91)and(cont<96) then
+		vis:=3;
+	if (cont>96)and(cont<99) then
+		vis:=4;
+	if (cont=99) then
+		vis:=5;
+	if (cont=100) then
+		vis:=150;
+	writeln('cantidad de visualizaciones es:',vis);
+end;
+
+var
+	vector:tvector;
+
+begin
+	clrscr;
+	Writeln('Bienvenidos a netflix');
+	GenerarVisualizaciones(vector);
+        GenerarVisualizaciones(vector);
+        GenerarVisualizaciones(vector);
+	readkey;
+end.
