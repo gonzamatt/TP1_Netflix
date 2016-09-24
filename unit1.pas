@@ -11,7 +11,7 @@ Type
     
     {Estructura de datos del usuario}
     trVisualizacion = record 
-                posicionSerieEnArregloSerie : longint;
+                posSerieEnvSerie : longint;
                 numTempEnLaSerie : byte;
                 numEpiDeLaTemp : byte;
                 cantVisualizaciones : byte
@@ -34,7 +34,7 @@ Type
 
 implementation
 
-procedure eliminarVideos(rVideo: trVideo);
+procedure eliminarVideo(rVideo: trVideo);
 {Pre: Recibe un registro de video
 * Post : Devuelve un registro de video con sus campos en nulo}
 begin
@@ -53,17 +53,17 @@ var
 begin
     while (( i <= CANT_TOP ) and ( vTop[i].titulo <> '' )) do
     begin
-        eliminarVideos(vTop[i])
+        eliminarVideo(vTop[i])
     end;
 end;
     
 
 
-procedure eliminarVisualizaciones( rVisualizacion: trVisualizacion );
+procedure eliminarVisualizacion( rVisualizacion: trVisualizacion );
 {Pre: Recibe un registro de visualizaciones
 * Post : Devuelve el registro con sus campos en cero}
 begin
-    rVisualizacion.posicionSerieEnArregloSerie := 0;
+    rVisualizacion.posSerieEnvSerie := 0;
     rVisualizacion.numTempEnLaSerie := 0;
     rVisualizacion.numEpiDeLaTemp := 0;
     rVisualizacion.cantVisualizaciones := 0;
@@ -79,9 +79,9 @@ begin
     rUsuario.nombre = '';
     i := 1;
     while i <= MAX_VISUALIZACIONES_POR_USUARIO and 
-            rUsuario.vVisualizacion[i].posicionSerieEnArregloSerie <> 0 do
+            rUsuario.vVisualizacion[i].posSerieEnvSerie <> 0 do
     begin
-        eliminarVisualizaciones(rUsuario.vVisualizacion[i]);
+        eliminarVisualizacion(rUsuario.vVisualizacion[i]);
         inc(i)
     end;
 end;
