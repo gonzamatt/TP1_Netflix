@@ -34,6 +34,52 @@ Type
 
 implementation
 
+
+procedure eliminarVisualizaciones( rVisualizacion: trVisualizacion );
+{Pre: Recibe un registro de visualizaciones
+* Post : Devuelve el registro con sus campos en cero}
+begin
+    rVisualizacion.posicionSerieEnArregloSerie := 0;
+    rVisualizacion.numTempEnLaSerie := 0;
+    rVisualizacion.numEpiDeLaTemp := 0;
+    rVisualizacion.cantVisualizaciones := 0;
+end;
+
+
+procedure eliminarUsuario(rUsuario : trUsuario);
+{Pre: Recibe un registro Usuario
+* Post : Devuelve el registro de nombre cadena vacia y sus visualizaciones en cero}
+var
+    i := integer;
+begin
+    rUsuario.nombre = '';
+    i := 1;
+    while i <= MAX_VISUALIZACIONES_POR_USUARIO and 
+            rUsuario.vVisualizacion[i].posicionSerieEnArregloSerie <> 0 do
+    begin
+        eliminarVisualizaciones(rUsuario.vVisualizacion[i]);
+        inc(i);
+    end;
+end;
+
+
+procedure iniciarUsuario(var vUsuario : tvUsuario);
+{Pre: Recibe el vector Usuario con datos validos o basura
+* Post: Devuelve un vector con un unico usuario llamado 'usuario' dejando los demas campos vacios}
+var
+    i : integer;
+begin
+    i := 1
+    while i <= MAX_USUARIOS and vUsuario[1].nombre <> '' do
+    begin
+        eliminarUsuario(vUsuario[1]);
+        inc(i);
+    end;
+    agregarUsuario('usuario', vUsuario);
+    
+end;
+
+
 begin 
 
 end.
