@@ -1,3 +1,5 @@
+{Un comentario}
+
 program Netflix;
 uses crt;                //asldka¤lsdkal¤sd
 Const
