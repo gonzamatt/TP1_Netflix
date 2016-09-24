@@ -69,10 +69,10 @@ procedure iniciarUsuario(var vUsuario : tvUsuario);
 var
     i : integer;
 begin
-    i := 1
-    while i <= MAX_USUARIOS and vUsuario[1].nombre <> '' do
+    i := 1;
+    while i <= MAX_USUARIOS and vUsuario[i].nombre <> '' do
     begin
-        eliminarUsuario(vUsuario[1]);
+        eliminarUsuario(vUsuario[i]);
         inc(i);
     end;
     agregarUsuario('usuario', vUsuario);
