@@ -2,13 +2,46 @@ unit unit2;
 
 interface
 
+const
+    MAX_CANTIDAD_SERIES = 4;
+    MAX_TEMPORADAS_POR_SERIE = 10;
+    MAX_EPISODIOS_POR_TEMPORADA = 25;
+    
+type
+    {Estructura de datos de las series}
+    trVideo = record 
+                titulo : string[72];
+                descripcion : string[234];
+                duracionEnSegundos : longint;
+                visualizaciones : longint
+                end;
+    
+    tvVideo = array[1..MAX_EPISODIOS_POR_TEMPORADA] of trVideo;         
+    
+    trTemp = record
+                anioDeEmision : string[4];
+                cantEpiDeTemp : byte;
+                vVideos : tvVideos
+                end;
+                
+    tvTemp = array[1..MAX_TEMPORADAS_POR_SERIE] of trTemp;
+    
+    trSerie = record
+                nombre : string[71];
+                descripcion : string[140];
+                cantTemp : byte;
+                vTemp : tvTemp
+                end;
+                
+    tvSerie = array[1..MAX_CANTIDAD_SERIES] of trSerie;
+    
 procedure cargarSeries(var vSerie: tvSerie);
 
 
 implementation
 
 procedure cargarSeries(var vSerie: tvSerie);
-    {Pre: Se recibe el vector Series vacio o con datos
+    {Pre: Recibe el vector Series vacio o con datos
     * Post: Se cargan las series al vector Series. En caso de haber tenido datos estos se eliminan}
 begin
     vSerie[1].nombre := 'Friends';
@@ -267,4 +300,5 @@ begin
     vSerie[4].vTemp[2].vVideo[5].visualizaciones := 0; 
 
 begin 
+
 end.
