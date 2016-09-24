@@ -28,11 +28,35 @@ Type
     
     
     {Estructura de datos del vector auxiliar}
-    tvTop = array[1..CANT_TOP] of posicion;
+    tvTop = array[1..CANT_TOP] of trVideo;
 
  
 
 implementation
+
+procedure eliminarVideos(rVideo: trVideo);
+{Pre: Recibe un registro de video
+* Post : Devuelve un registro de video con sus campos en nulo}
+begin
+    titulo := '';
+    descripcion := '';
+    duracionEnSegundos := 0;
+    visualizaciones := 0;
+end;
+
+
+procedure iniciarTop(var vTop: tvTop);
+{Pre: Recibe un vector Top
+*Post: Devuelve un vector Top con sus campos y subcampos en nulo} 
+var
+    i:= integer;
+begin
+    while (( i <= CANT_TOP ) and ( vTop[i].titulo <> '' )) do
+    begin
+        eliminarVideos(vTop[i])
+    end;
+end;
+    
 
 
 procedure eliminarVisualizaciones( rVisualizacion: trVisualizacion );
@@ -58,11 +82,30 @@ begin
             rUsuario.vVisualizacion[i].posicionSerieEnArregloSerie <> 0 do
     begin
         eliminarVisualizaciones(rUsuario.vVisualizacion[i]);
-        inc(i);
+        inc(i)
     end;
 end;
 
 
+procedure agregarUsuario(nombre:string[8], var vUsario: tvUsuario);
+{Pre: Recibe un nombre valido 
+* Post: Agrega el usuario al sistema. En caso de haberse alcanzado el MAX_USUARIOS imprime un error.}
+var
+    i: integer;
+begin
+    i:= 1;
+    while i <= MAX_USUARIOS and vUsuario[i].nombre <> '' do
+    begin
+        inc(i)
+    end;
+    
+    if i = MAX_USUARIOS then
+        writeln('ERROR: No se puede agregar mas usuarios. Limite alcanzado.')
+    else
+        vUsuario[i].nombre := nombre;
+end;
+    
+    
 procedure iniciarUsuario(var vUsuario : tvUsuario);
 {Pre: Recibe el vector Usuario con datos validos o basura
 * Post: Devuelve un vector con un unico usuario llamado 'usuario' dejando los demas campos vacios}
@@ -73,7 +116,7 @@ begin
     while i <= MAX_USUARIOS and vUsuario[i].nombre <> '' do
     begin
         eliminarUsuario(vUsuario[i]);
-        inc(i);
+        inc(i)
     end;
     agregarUsuario('usuario', vUsuario);
     
