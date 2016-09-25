@@ -1,0 +1,20 @@
+procedure limpiarvisualizaciones(rvisualizacion:trvisualizacion);
+var
+
+begin
+
+ Writeln('¿Desea eliminar las visualizaciones por usuario? s/n ');
+ readln(resp);
+ if resp='s' then
+       rVisualizacion.cantVisualizaciones := 0;
+    else
+        cargar_menu();
+ 
+  writeln('¿Desea eliminar las visualizaciones de los videos? s/n ');
+  readln(resp);
+  if resp='s' then
+        trvideo.visualizaciones:=0;
+     else 
+        cargar_menu();
+ 
+end;
