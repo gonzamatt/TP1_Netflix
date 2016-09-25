@@ -118,10 +118,29 @@ begin
         eliminarUsuario(vUsuario[i]);
         inc(i)
     end;
-    agregarUsuario('usuario', vUsuario);
-    
+    agregarUsuario('usuario', vUsuario)
 end;
 
+
+procedure calcularTop(vTop: tvTop, vSerie: tvSerie);
+var
+begin
+
+end;
+
+
+
+procedure mostrarTop(vTop: tvTop, vSerie: tvSerie);
+begin
+    if (vSerie[1].nombre = '') then
+        writeln('ERROR: No hay series cargadas.')
+    else
+        begin
+        calcularTop(vTop);
+        imprimirTop(vTop)
+        end;
+end;
+        
 
 begin 
 
